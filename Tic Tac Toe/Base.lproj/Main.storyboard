@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,9 +36,10 @@
                                 </constraints>
                                 <state key="normal" title="Reset"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Board" translatesAutoresizingMaskIntoConstraints="NO" id="TaI-Fg-6Vk">
-                                <frame key="frameInset" minX="37" minY="183" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board" translatesAutoresizingMaskIntoConstraints="NO" id="TaI-Fg-6Vk">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TaI-Fg-6Vk" secondAttribute="height" multiplier="1:1" id="sRh-pf-Geb"/>
+                                </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4PQ-va-skJ">
                                 <frame key="frameInset" minX="37" minY="183" width="300" height="300"/>
@@ -64,6 +66,9 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="8nx-na-sdK" secondAttribute="trailing" constant="21" id="1wU-KJ-tlb"/>
                             <constraint firstItem="Amp-O0-KcW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fI-or-geT"/>
+                            <constraint firstItem="TaI-Fg-6Vk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EkI-ex-I5Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TaI-Fg-6Vk" secondAttribute="trailing" constant="22" id="H1V-S5-KEz"/>
+                            <constraint firstItem="TaI-Fg-6Vk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="KnO-Ut-8r2"/>
                             <constraint firstItem="8nx-na-sdK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Opc-T3-och"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Amp-O0-KcW" secondAttribute="bottom" constant="20" id="hAk-xx-KJr"/>
                             <constraint firstItem="sle-Ub-d1p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="iFW-69-kIb"/>
