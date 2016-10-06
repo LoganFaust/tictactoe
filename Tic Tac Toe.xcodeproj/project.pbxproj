@@ -14,6 +14,7 @@
 		02B7CDAF1DA5BA02003309F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B7CDAD1DA5BA02003309F1 /* LaunchScreen.storyboard */; };
 		02B7CDBA1DA5BA02003309F1 /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B7CDB91DA5BA02003309F1 /* Tic_Tac_ToeTests.swift */; };
 		02B7CDC51DA5BA02003309F1 /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B7CDC41DA5BA02003309F1 /* Tic_Tac_ToeUITests.swift */; };
+		02B7CDD31DA5D797003309F1 /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B7CDD21DA5D797003309F1 /* BoardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		02B7CDC01DA5BA02003309F1 /* Tic Tac ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B7CDC41DA5BA02003309F1 /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		02B7CDC61DA5BA02003309F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B7CDD21DA5D797003309F1 /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				02B7CDA41DA5BA02003309F1 /* AppDelegate.swift */,
 				02B7CDA61DA5BA02003309F1 /* ViewController.swift */,
 				02B7CDA81DA5BA02003309F1 /* Main.storyboard */,
+				02B7CDD21DA5D797003309F1 /* BoardCollectionViewCell.swift */,
 				02B7CDAB1DA5BA02003309F1 /* Assets.xcassets */,
 				02B7CDAD1DA5BA02003309F1 /* LaunchScreen.storyboard */,
 				02B7CDB01DA5BA02003309F1 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				02B7CDA71DA5BA02003309F1 /* ViewController.swift in Sources */,
 				02B7CDA51DA5BA02003309F1 /* AppDelegate.swift in Sources */,
+				02B7CDD31DA5D797003309F1 /* BoardCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 339XU997U5;
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 339XU997U5;
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
